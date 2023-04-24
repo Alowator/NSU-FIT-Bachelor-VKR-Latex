@@ -1,0 +1,61 @@
+\begin{titlepage}
+	\singlespacing
+	\begin{center}
+		\MakeUppercase{
+			\administration\\
+			<<\universitylong>>\\
+			(\university, \universityshort)
+		}\\[5mm]
+		\faculty\\
+		\department\\[5mm]
+	\end{center}
+
+	\begin{flushleft}
+		Направление подготовки \programnum~\programname\\
+		Направленность (профиль): \profile\\[20mm]
+	\end{flushleft}
+
+	\begin{center}
+		\textbf{ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ РАБОТА БАКАЛАВРА}\\[5mm]
+		\textbf{\studentfortitle}
+	\end{center}
+
+	\begin{flushleft}
+		Тема работы:
+	\end{flushleft}
+
+	\begin{center}
+		\textbf{\MakeUppercase{\topic}}\\[20mm]
+	\end{center}
+
+	\begin{flushleft}
+		\begin{minipage}[t]{0.4\textwidth}
+			\textbf{<<К защите допущена>>} \\
+			Заведующий кафедрой, \\
+			\apdegree, \aprank \\[1mm]
+			\apname~/~\signature\\
+			\ereadydate
+		\end{minipage}
+		\hspace{25mm}
+		\begin{minipage}[t]{0.4\textwidth}
+			\textbf{Руководитель ВКР} \\
+			\sadegree, \sarank \\
+			\departmentshort \\[1mm]
+			\saname~/~\signature\\
+			\ereadydate\\[3mm]
+
+			\ifdefined\ssalastname%
+				\textbf{Соруководитель ВКР} \\
+				\if\empty\ssadegree\else\ssadegree,\fi~\ssarank \\
+				\departmentshort \\[1mm]
+				\ssaname~/~\signature\\
+				\ereadydate
+			\fi
+		\end{minipage}
+	\end{flushleft}
+	\vfill
+
+	\begin{center}
+		Новосибирск, \currentyear
+	\end{center}
+\end{titlepage}

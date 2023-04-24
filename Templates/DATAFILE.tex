@@ -1,0 +1,83 @@
+% Имя студента
+\newcommand{\student}{Данико Виталий Романович} % полное имя студента
+\newcommand{\studentshort}{Данилко~В.~Р.} % имя студента с инициалами
+\newcommand{\studentfortitle}{Данилко Виталия Романовича} % имя студента в родительном падеже 
+\newcommand{\studentfortask}{Данилко Виталию Романовичу} % имя студента в дательном падеже 
+\newcommand{\studentforabstract}{Данилко Виталием Романовичем} % имя студента в творительном падеже 
+
+% Сведения о университете
+\newcommand{\group}{18200} % номер группы
+\newcommand{\department}{Кафедра дискретного анализа и исследования операций} % название кафедры
+\newcommand{\departmentshort}{каф. ДАиИО ФИТ НГУ} % сокращенное название кафедры
+\newcommand{\university}{Новосибирский государственный университет}
+\newcommand{\universitylong}{Новосибирский национальный исследовательский государственный университет}
+\newcommand{\universityshort}{НГУ}
+\newcommand{\faculty}{Факультет информационных технологий}
+\newcommand{\programnum}{09.03.01} % номер программы обучения
+\newcommand{\programname}{Информатика и вычислительная техника}  % название программы обучения
+\newcommand{\profile}{Программная инженерия и компьютерные науки} % профиль программы обучения
+\newcommand{\administration}{Министерство науки и высшего образования РФ\\Федеральное государственное автономное образовательное\\учреждение высшего образования}
+
+% Сведения о работе
+\newcommand{\topic}{Название ВКР}
+\newcommand{\keywords}{ключевые слова, через, запятую}
+
+% Распоряжение проректора по учебной работе об утверждении ВКР
+\newcommand{\approvedby}{292}                               % Номер
+\newcommand{\dateapprovedby}{29~октября~2021~г.}            % Дата
+\newcommand{\edateapprovedby}{<<29>>~октября~2021~г.}       % Дата
+
+
+% Распоряжение проректора по учебной работе о корректировке ВКР
+\newcommand{\correctedby}{5}                                % Номер
+\newcommand{\datecorrectedby}{17~января~2022~г.}            % Дата
+\newcommand{\edatecorrectedby}{<<17>>~января~2022~г.}       % Дата
+
+% Срок сдачи студентом готовой работы
+\newcommand{\readydate}{12~мая~2022~г.}
+\newcommand{\ereadydate}{<<12>>~мая~2022~г.}
+
+
+% Заведующий кафедрой
+\newcommand{\apinitials}{В.~Л.} 
+\newcommand{\aplastname}{Береснев}
+\newcommand{\apname}{\aplastname~\apinitials}
+\newcommand{\apdegree}{д.ф.-м.н.}
+\newcommand{\aprank}{профессор}
+
+% Руководитель ВКР
+\newcommand{\sainitials}{В.~Р.}
+\newcommand{\salastname}{Данилко}
+\newcommand{\saname}{\salastname~\sainitials}
+\newcommand{\sadegree}{к.ф.-м.н.}
+\newcommand{\sarank}{доцент}
+\newcommand{\sarankapprovedby}{доцент}
+
+% Соруководитель ВКР
+\newcommand{\ssainitials}{В.~Р.}
+\newcommand{\ssalastname}{Данилко}
+\newcommand{\ssaname}{\ssalastname~\ssainitials}
+\newcommand{\ssadegree}{}
+\newcommand{\ssarank}{ассистент}
+
+% Консультант
+\newcommand{\scinitials}{И.О.}
+\newcommand{\sclastname}{Фамилия}
+\newcommand{\scname}{\salastname~\sainitials}
+
+% Вспомогательное
+\newcommand{\prevyear}[1][]{\ifthenelse{\equal{#1}{}}{2019 г.}{20#1{19} г.}}
+\newcommand{\currentyear}[1][]{\ifthenelse{\equal{#1}{}}{2022 г.}{20#1{22} г.}}
+\newcommand{\datetemplate}{<<\dotuline{\hspace{9mm}}>>\dotuline{\hspace{33mm}}20\dotuline{\hspace{5mm}} г.}
+\newcommand{\infotemplate}{$\underset{\text{(ФИО) / (подпись)}}{\text{\dotuline{\hspace{0.5\textwidth}/\hspace{0.45\textwidth}}}}$}
+\newcommand{\signature}{\makebox[3cm]{\hrulefill}}
+
+
+% Задание на ВКР
+\newcommand{\taskstartdata}{изучение и анализ свойств обобщенного графа Петерсена, разработка алгоритма построения совершенных раскрасок и матриц их параметров, обоснование разработанного алгоритма, анализ полученных результатов.}
+\newcommand{\taskstructure}{введение, постановка задачи и её анализ, проектирование программы, реализация алгоритма, полученные результаты.}
+
+% Текст аннотации
+\newcommand{\abstractdata}{В дипломной работе рассмотрены основные аспекты {область исследования}, проведен анализ существующих подходов к {задача исследования}. В работе представлен новый метод {метод исследования}, который позволяет достичь {цель исследования}.
+
+Был разработан программный комплекс {название программного комплекса}, реализующий предложенный метод, и проведены экспериментальные исследования {результаты экспериментальных исследований}. Проведен анализ полученных результатов и сделаны выводы о {выводы исследования}.}

@@ -1,0 +1,15 @@
+/output/*
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.output
+*.pdf
+*.gz
+*.toc
+*.xdv
+*.out
+/.vscode
+*.synctex(busy)
