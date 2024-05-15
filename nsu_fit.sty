@@ -137,13 +137,14 @@
 \newtotcounter{appendixnum} % количество приложений
 
 % Содержание
-\renewcommand{\contentsname}{\centering\normalfont СОДЕРЖАНИЕ} % настройка названия для содержания
+% \renewcommand{\contentsname}{\centering\normalfont СОДЕРЖАНИЕ} % настройка названия для содержания
 
 \usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\hfill\normalfont\bfseries\MakeUppercase}
+\renewcommand{\cftaftertoctitle}{\hfill\hfill}
 \renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}} % for parts
 % \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % for chapters
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % for sections
-% \renewcommand{\cfttoctitlefont}{\normalfont\bfseries\MakeUppercase}
 % \renewcommand{\cftbeforetoctitleskip}{-1em}
 % \renewcommand{\cftaftertoctitleskip}{1pt}
 

@@ -1,9 +1,9 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,14pt]{article}
 \usepackage{nsu_fit}
 
 % BibTex
 \bibliographystyle{biblio/ugost2008}
-\addto\captionsrussian{\def\refname{Список использованных источниов и литературы}}
+\addto\captionsrussian{\def\refname{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ И ЛИТЕРАТУРЫ}}
 
 \begin{document}
 \input{Templates/DATAFILE.tex}
@@ -15,17 +15,17 @@
 \setcounter{page}{1} % НОМЕР СТРАНИЦЫ
 \tableofcontents
 \newpage
-\input{Text/1_Vvedenie.tex}
+\input{Text/1_Intro.tex}
 \newpage
-\input{Text/2_Text.tex}
+\input{Text/2_Chapter1.tex}
 \newpage
-\input{Text/3_Text.tex}
+\input{Text/3_Chapter2.tex}
 % ....
 \newpage
-\input{Text/N_Zakluchenie.tex}
+\input{Text/4_Conclusion.tex}
 \newpage
 \input{Templates/04_END_OF_CONCLUSION.tex}
 \newpage
-\addcontentsline{toc}{section}{Список использованных источников и литературы}
+\addcontentsline{toc}{section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ И ЛИТЕРАТУРЫ}
 \bibliography{Biblio/references}
 \end{document}
