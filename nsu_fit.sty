@@ -140,6 +140,7 @@
 % \renewcommand{\contentsname}{\centering\normalfont СОДЕРЖАНИЕ} % настройка названия для содержания
 
 \usepackage{tocloft}
+% \renewcommand{\cftsecpresnum}{SECTION}
 \renewcommand{\cfttoctitlefont}{\hfill\normalfont\bfseries\MakeUppercase}
 \renewcommand{\cftaftertoctitle}{\hfill\hfill}
 \renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}} % for parts
@@ -148,10 +149,9 @@
 % \renewcommand{\cftbeforetoctitleskip}{-1em}
 % \renewcommand{\cftaftertoctitleskip}{1pt}
 
-
 % Главы, разделы, подразделы
 \usepackage[explicit]{titlesec} % Пакет для настройки заголовков разделов
-\titleformat{\section}{\centering\normalfont\bfseries}{\thesection}{10pt}{\MakeUppercase{#1}}  % Форматирование названия раздела: выравнивание по центру, жирный шрифт, номер раздела, отступы и капительные буквы
+\titleformat{\section}{\centering\normalfont\bfseries}{ГЛАВА \thesection.}{10pt}{\MakeUppercase{#1}}  % Форматирование названия раздела: выравнивание по центру, жирный шрифт, номер раздела, отступы и капительные буквы
 \titleformat{\subsection}{\centering\normalfont\bfseries}{\thesubsection}{10pt}{#1} % Форматирование названия подраздела: жирный шрифт, номер подраздела, отступы
 % \titleformat{\subsection}{\normalfont}{\thesubsection}{10pt}{#1}
 \titlespacing*{\section}{0pt}{-12pt}{11pt} % Отступы для разделов
