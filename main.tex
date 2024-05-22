@@ -8,11 +8,10 @@
 \begin{document}
 \input{Templates/DATAFILE.tex}
 {\small\input{Templates/01_TITLE.tex}}
-% \input{Templates/02_OLD_TASK.tex}
-% \input{Templates/02_TASK.tex}
-% \input{Templates/03_ABSTRACT.tex}
+{\small\input{Templates/02_TASK.tex}}
+{\small\input{Templates/03_ABSTRACT.tex}}
 
-\setcounter{page}{1} % НОМЕР СТРАНИЦЫ
+\setcounter{page}{3} % НОМЕР СТРАНИЦЫ
 \tableofcontents
 \newpage
 \input{Text/1_Intro.tex}
@@ -24,8 +23,6 @@
 \newpage
 \input{Text/4_Conclusion.tex}
 \newpage
-\input{Templates/04_END_OF_CONCLUSION.tex}
-\newpage
-\addcontentsline{toc}{section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ И ЛИТЕРАТУРЫ}
+\addcontentsline{toc}{section}{Список использованных источников и литературы}
 \bibliography{Biblio/references}
 \end{document}

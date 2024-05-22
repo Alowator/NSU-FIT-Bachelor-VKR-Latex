@@ -16,7 +16,7 @@
 		УТВЕРЖДАЮ \\
 		Зав. кафедрой \aplastname~\apinitials \\[1mm]
 		\signature\\
-		\edatecorrectedby
+		\edateapprovedby
 	\end{flushright}
 
 	\begin{center}
@@ -25,12 +25,13 @@
 	\end{center}
 
 	\begin{flushleft}
-		Студентке \studentfortask, группы \group\\[1mm]
+		Студенту \studentfortask, группы \group\\[1mm]
 		Тема: <<\topic>>\\
-		утверждена распоряжение проректора по учебной работе от \datecorrectedby~№~\correctedby\\[1mm]
+		утверждена распоряжение проректора по учебной работе от \dateapprovedby~№~\approvedby\\[1mm]
 		Срок сдачи студентом готовой работы \readydate\\[1mm]
 		Исходные данные (или цель работы): \taskstartdata\\[1mm]
-		Структурные части работы: \taskstructure
+		Структурные части работы: \taskstructure\\[1mm]
+		Консультант по разделам ВКР: Цидулко Оксана Юрьевна --- все разделы.
 	\end{flushleft}
 
 	\begin{flushleft}
@@ -39,21 +40,13 @@
 			\sadegree, \sarankapprovedby \\
 			\departmentshort \\
 			\saname~/~\signature \\
-			\edatecorrectedby\\
-
-			\ifdefined\ssalastname%
-				Соруководитель ВКР \\[1mm]
-				\if\empty\ssadegree\else\ssadegree,\fi~\ssarank \\
-				\departmentshort \\[1mm]
-				\ssaname~/~\signature\\
-				\edatecorrectedby
-			\fi
+			\edateapprovedby
 		\end{minipage}
 		\hspace{25mm}
 		\begin{minipage}[t]{0.4\textwidth}
 			Задание принял к исполнению \\[1mm]
 			\studentshort~/~\signature \\
-			\edatecorrectedby
+			\edateapprovedby
 		\end{minipage}
 	\end{flushleft}
 \end{titlepage}
