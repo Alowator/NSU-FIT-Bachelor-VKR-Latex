@@ -62,12 +62,12 @@
 \usepackage{longtable} % пакет для создания длинных таблиц, которые могут переноситься на следующую страницу
 
 % Листинги
-\usepackage{listings} % пакет для вставки кода в документ
+\usepackage{listingsutf8} % пакет для вставки кода в документ
 \usepackage{xcolor} % пакет для задания цветов
-\definecolor{codegreen}{rgb}{0,0.6,0} % задание зеленого цвета для комментариев в коде
-\definecolor{codegray}{rgb}{0.5,0.5,0.5} % задание серого цвета для номеров строк в коде
-\definecolor{codepurple}{rgb}{0.58,0,0.82} % задание пурпурного цвета для строк кода
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92} % задание светло-серого цвета для фона блока кода
+% \definecolor{codegreen}{rgb}{0,0.6,0} % задание зеленого цвета для комментариев в коде
+% \definecolor{codegray}{rgb}{0.5,0.5,0.5} % задание серого цвета для номеров строк в коде
+% \definecolor{codepurple}{rgb}{0.58,0,0.82} % задание пурпурного цвета для строк кода
+% \definecolor{backcolour}{rgb}{0.95,0.95,0.92} % задание светло-серого цвета для фона блока кода
 \lstdefinestyle{mystyle}{ % задание стиля блока кода
 	backgroundcolor=\color{backcolour},
 	commentstyle=\color{codegreen},
@@ -79,12 +79,8 @@
 	breaklines=true,
 	captionpos=b,
 	keepspaces=true,
-	numbers=left,
-	numbersep=5pt,
-	showspaces=false,
-	showstringspaces=false,
-	showtabs=false,
-	tabsize=2
+  escapechar=\%,
+  texcl=true
 }
 \lstset{style=mystyle} % применение заданного стиля для всех блоков кода
 
@@ -92,7 +88,7 @@
 \usepackage{caption} % пакет для настройки подписей к объектам (картинкам, таблицам и т.д.)
 \captionsetup[figure]{name={Рисунок},labelsep=endash,size=small} % настройка подписей для рисунков
 \captionsetup[table]{name={Таблица},labelsep=endash,justification=raggedright,singlelinecheck=false} % настройка подписей для таблиц
-\captionsetup[lstlisting]{labelsep=endash} % настройка подписей для листингов
+\captionsetup[lstlisting]{labelsep=endash,size=small} % настройка подписей для листингов
 
 % Математика
 \usepackage{amsthm,amssymb,amsmath}
