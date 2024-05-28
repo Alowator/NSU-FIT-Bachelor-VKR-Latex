@@ -64,10 +64,10 @@
 % Листинги
 \usepackage{listingsutf8} % пакет для вставки кода в документ
 \usepackage{xcolor} % пакет для задания цветов
-% \definecolor{codegreen}{rgb}{0,0.6,0} % задание зеленого цвета для комментариев в коде
-% \definecolor{codegray}{rgb}{0.5,0.5,0.5} % задание серого цвета для номеров строк в коде
-% \definecolor{codepurple}{rgb}{0.58,0,0.82} % задание пурпурного цвета для строк кода
-% \definecolor{backcolour}{rgb}{0.95,0.95,0.92} % задание светло-серого цвета для фона блока кода
+\definecolor{codegreen}{rgb}{0,0.6,0} % задание зеленого цвета для комментариев в коде
+\definecolor{codegray}{rgb}{0.5,0.5,0.5} % задание серого цвета для номеров строк в коде
+\definecolor{codepurple}{rgb}{0.58,0,0.82} % задание пурпурного цвета для строк кода
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92} % задание светло-серого цвета для фона блока кода
 \lstdefinestyle{mystyle}{ % задание стиля блока кода
 	backgroundcolor=\color{backcolour},
 	commentstyle=\color{codegreen},
@@ -79,10 +79,15 @@
 	breaklines=true,
 	captionpos=b,
 	keepspaces=true,
-  escapechar=\%,
-  texcl=true
+	escapechar=\%,
+	texcl=true
 }
-\lstset{style=mystyle} % применение заданного стиля для всех блоков кода
+\lstset{
+	style=mystyle,
+	language=Java,
+	tabsize=2,
+	numbers=left
+} % применение заданного стиля для всех блоков кода
 
 % Подписи к картинкам, таблицам и листингам
 \usepackage{caption} % пакет для настройки подписей к объектам (картинкам, таблицам и т.д.)
