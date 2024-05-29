@@ -1906,7 +1906,7 @@ ITERATE {forward.pass}
 
 
 FUNCTION {begin.bib}
-{ "\begin{thebibliography}{"  longest.label  * "}" * write$ newline$
+{ "\def\bibindent{2em}\begin{thebibliography}{"  longest.label  * "\kern\bibindent}" * write$ newline$
   "\def\selectlanguageifdefined#1{"                  write$ newline$
   "\expandafter\ifx\csname date#1\endcsname\relax"   write$ newline$
   "\else\selectlanguage{#1}\fi}"                     write$ newline$
